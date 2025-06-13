@@ -1,4 +1,4 @@
-# <img src="kc.png" height=40 width=40> Karpov.courses Start ML
+# <img src="https://github.com/AlinAli16/Karpov.Courses/blob/main/kc.png" height=40 width=40> Karpov.courses Start ML
 Результаты прохождения курса:
   <ul> 
      <li> Освоила Python с использованием библиотек Pandas, Numpy, Matplotlib e.t.c. </li>
