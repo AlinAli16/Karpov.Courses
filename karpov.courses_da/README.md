@@ -19,4 +19,7 @@
 | <a href='https://github.com/AlinAli16/karpov.courses/tree/main/other/ETL(Python%2BSQL)'>ETL: Python+SQL </a>| Выгрузка информации об объявлениях на Airbnb в Лондоне 🇬🇧. из Clichouse и анализ данных с использованием библиотек python | Python: pandas, numpy, matplotlib, seaborn, pandahouse; <p> SQL: where, order by, group by  |
 | <a href='https://github.com/AlinAli16/karpov.courses/tree/main/other/airflow_python'>Airflow python </a> | Составление dag в airflow из нескольких тасок для решения аналитических задач | Python: pandas, requests, datetime, airflow; <p> Airflow, cron  |
 
+  ### <a href='https://github.com/AlinAli16/Karpov.Courses/blob/main/karpov.courses_da/Sertificate_KC_ru.jpg'> Сертификат </a>
+  
   ### <a href='https://github.com/AlinAli16'> В профиль </a>
+

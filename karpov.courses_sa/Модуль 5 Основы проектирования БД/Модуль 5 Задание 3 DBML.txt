@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Table Users {
   id INT [pk]
   username VARCHAR(255) [unique, not null]
@@ -116,3 +117,123 @@ Ref: Devices.user_id > Users.id
 Ref: AuthLogs.user_id > Users.id
 Ref: AuthLogs.session_id > Sessions.id
 Ref: AuthLogs.device_id > Devices.id
+=======
+Table Users {
+  id INT [pk]
+  username VARCHAR(255) [unique, not null]
+  email VARCHAR(255) [unique, not null]
+  password_hash VARCHAR(255) [not null]
+  password_salt VARCHAR(255) [not null]
+  first_name VARCHAR(255)
+  last_name VARCHAR(255)
+  is_active BOOLEAN [default: true]
+  created_at TIMESTAMP [not null]
+  updated_at TIMESTAMP [not null]
+}
+
+Table Roles {
+  id INT [pk]
+  name VARCHAR(255) [unique, not null]
+  description TEXT
+  created_at TIMESTAMP [not null]
+  updated_at TIMESTAMP [not null]
+}
+
+Table Permissions {
+  id INT [pk]
+  name VARCHAR(255) [unique, not null]
+  description TEXT
+  created_at TIMESTAMP [not null]
+  updated_at TIMESTAMP [not null]
+}
+
+Table UserRoles {
+  user_id INT [not null]
+  role_id INT [not null]
+  PRIMARY KEY (user_id, role_id)
+
+  indexes {
+        (user_id, role_id) [unique]
+  }
+}
+
+Table RolePermissions {
+  role_id INT [not null]
+  permission_id INT [not null]
+  PRIMARY KEY (role_id, permission_id)
+  indexes {
+        (role_id, permission_id) [unique]
+  }
+}
+
+Table Sessions {
+  id UUID [pk, not null]
+  user_id INT [not null]
+  session_token VARCHAR(255) [unique, not null]
+  refresh_token VARCHAR(255) [unique, not null]
+  ip_address VARCHAR(45)
+  user_agent VARCHAR(255)
+  login_time TIMESTAMP
+  last_activity TIMESTAMP
+  expiry_time TIMESTAMP [not null]
+  is_valid BOOLEAN [default: true]
+  device_id INT
+}
+
+Table Resources {
+  id INT [pk]
+  name VARCHAR(255) [unique, not null]
+  description TEXT
+  created_at TIMESTAMP [not null]
+  updated_at TIMESTAMP [not null]
+}
+
+Table PermissionResources {
+  permission_id INT [not null]
+  resource_id INT [not null]
+  PRIMARY KEY (permission_id, resource_id)
+  indexes {
+        (permission_id, resource_id) [unique]
+  }
+}
+
+Table Devices {
+  id INT [pk]
+  user_id INT [not null]
+  device_type VARCHAR(255) 
+  device_name VARCHAR(255)
+  os VARCHAR(255)
+  os_version VARCHAR(255)
+  app_version VARCHAR(255)
+  created_at TIMESTAMP [not null]
+  last_used TIMESTAMP [not null]
+
+}
+
+Table AuthLogs {
+  id INT [pk]
+  user_id INT [not null]
+  session_id INT [not null]  
+  device_id INT [not null]  
+  event_type VARCHAR(255) [not null] 
+  ip_address VARCHAR(45)
+  user_agent VARCHAR(255)
+  event_time TIMESTAMP [not null]
+  success BOOLEAN
+  failure_reason TEXT 
+}
+
+
+Ref: UserRoles.user_id > Users.id
+Ref: UserRoles.role_id > Roles.id
+Ref: RolePermissions.role_id > Roles.id
+Ref: RolePermissions.permission_id > Permissions.id
+Ref: Sessions.user_id > Users.id
+Ref: PermissionResources.permission_id > Permissions.id
+Ref: PermissionResources.resource_id > Resources.id
+Ref: Sessions.device_id > Devices.id
+Ref: Devices.user_id > Users.id
+Ref: AuthLogs.user_id > Users.id
+Ref: AuthLogs.session_id > Sessions.id
+Ref: AuthLogs.device_id > Devices.id
+>>>>>>> 1c0ec8fc48aaf77145d835c57b26855fc68bca6e

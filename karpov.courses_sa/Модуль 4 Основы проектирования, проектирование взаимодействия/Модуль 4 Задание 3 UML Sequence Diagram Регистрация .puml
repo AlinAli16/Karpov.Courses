@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @startuml
 title Регистрация пользователя по номеру телефона
 
@@ -102,4 +103,110 @@ else Телефон уже зарегистрирован
     UI --> User : Ошибка: Пользователь с таким номером уже существует
     deactivate UI
 end
+=======
+@startuml
+title Регистрация пользователя по номеру телефона
+
+actor User as User
+participant "Registration UI" as UI 
+participant "API Gateway" as Gateway
+participant "Registration Service" as Reg
+participant "Identity Provider (IdP)" as IdP
+participant "Verification Service" as Verify
+participant "Token Service" as Token
+database "User DB" as UserDB
+
+== Step 1: Ввод номера телефона ==
+User -> UI : Ввод номера телефона
+activate UI
+UI -> Gateway : POST /register/start {phone}
+deactivate UI
+activate Gateway
+Gateway -> Reg : POST /register/start {phone}
+deactivate Gateway
+activate Reg
+
+== Step 2: Проверка уникальности ==
+Reg -> IdP : Проверка существования номера
+activate IdP
+IdP -> UserDB : SELECT user WHERE phone = ?
+activate UserDB
+UserDB --> IdP : Результат поиска
+deactivate UserDB
+
+alt Телефон не найден
+    IdP --> Reg : Номер телефона уникален
+    deactivate IdP
+    Reg -> Verify : Отправить SMS {phone, code}
+    activate Verify
+    Verify --> Reg : OK (SMS отправлен)
+    deactivate Verify
+
+    == Step 3: Ввод кода подтверждения ==
+    User -> UI : Ввод кода подтверждения
+    activate UI
+    UI -> Gateway : POST /register/verify {phone, code}
+    deactivate UI
+    activate Gateway
+    Gateway -> Reg : POST /register/verify {phone, code}
+    deactivate Gateway
+
+    == Step 4: Проверка кода ==
+    activate Reg
+    Reg -> Verify : Проверить SMS {phone, code}
+    activate Verify
+    Verify --> Reg : true/false
+    deactivate Verify
+
+    alt Код верный
+        == Step 5: Создание пользователя ==
+        Reg -> IdP : Создать пользователя {phone}
+        activate IdP
+        IdP -> UserDB : INSERT INTO user {phone}
+        activate UserDB
+        UserDB --> IdP : OK (пользователь создан)
+        deactivate UserDB
+        IdP --> Reg : OK (пользователь создан)
+        deactivate IdP
+
+        == Step 6: Генерация токенов ==
+        Reg -> Token : Запросить токены {userId}
+        activate Token
+        Token --> Reg : {accessToken, refreshToken}
+        deactivate Token
+
+        == Step 7: Возврат ответа с токенами ==
+        Reg --> Gateway : {accessToken, refreshToken}
+        deactivate Reg
+        activate Gateway
+        Gateway --> UI : {accessToken, refreshToken}
+        deactivate Gateway
+        activate UI
+        UI --> User : Успешная регистрация и токены
+        deactivate UI
+
+    else Код неверный
+        Reg --> Gateway : Ошибка: Неверный код
+        deactivate Reg
+        activate Gateway
+        Gateway --> UI : Ошибка: Неверный код
+        deactivate Gateway
+        activate UI
+        UI --> User : Ошибка: Неверный код
+        deactivate UI
+    end
+
+else Телефон уже зарегистрирован
+    IdP --> Reg : Ошибка: Пользователь с таким номером уже существует
+    deactivate IdP
+    Reg --> Gateway : Ошибка: Пользователь с таким номером уже существует
+    deactivate Reg
+    activate Gateway
+    Gateway --> UI : Ошибка: Пользователь с таким номером уже существует
+    deactivate Gateway
+    activate UI
+    UI --> User : Ошибка: Пользователь с таким номером уже существует
+    deactivate UI
+end
+>>>>>>> 1c0ec8fc48aaf77145d835c57b26855fc68bca6e
 @enduml
