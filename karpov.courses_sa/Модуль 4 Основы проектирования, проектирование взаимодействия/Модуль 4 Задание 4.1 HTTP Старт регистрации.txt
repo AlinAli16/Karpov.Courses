@@ -1,0 +1,8 @@
+### Описание: Запрос на старт регистрации по номеру телефона
+
+POST /auth/register/start
+Content-Type: application/json
+
+{
+ "phone":"+79055953362"
+}

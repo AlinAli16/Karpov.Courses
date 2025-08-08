@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.6">
+  <diagram name="Use Case Diagram" id="6A7tdgZC4f6q2co9sYuM">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-4" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBorderColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="110" width="440" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-1" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&lt;u&gt;Список стейкхолдеров, их роль/интересы&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;table style=&quot;border: 1px solid rgb(0, 0, 0); border-collapse: collapse;&quot; border=&quot;1&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;b&gt;Стейкхолдер&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;b&gt;Роль/интерес&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Команда разработчиков&amp;nbsp;&lt;/td&gt;&lt;td&gt;Разработка и поддержка базовой платформы идентификации и аутентификации, интеграция с VK Pay. Заинтересованы в надежной работе системы&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Команда информационной безопасности VK&lt;/td&gt;&lt;td&gt;Обеспечение безопасности системы авторизации и аутентификации, выявление и устранение уязвимостей, предотвращение мошенничества. Заинтересованы в обеспечении безопасности и защиты данных&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Финансовый отдел VK&lt;/td&gt;&lt;td&gt;Управление финансовыми потоками, связанными с VK Pay, обеспечение финансовой безопасности транзакций. Заинтересованы в проведении финансовых операций, финансовой стабильности и&amp;nbsp;соблюдение финансовых нормативов&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Служба поддержки пользователей VK Pay&lt;/td&gt;&lt;td&gt;Обработка запросов пользователей, связанных с авторизацией и аутентификацией, решение проблем, предоставление консультаций. Заинтересованы в&amp;nbsp;эффективном решении проблем, снижении нагрузки на службу поддержки&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Пользователи VK Pay&lt;/td&gt;&lt;td&gt;Используют VK Pay для совершения покупок и переводов. Заинтересованы в&amp;nbsp;безопасности, удобстве, простоте использования системы авторизации и аутентификации, защите личных данных&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Торгово-сервисные предприятия (интернет-магазины, сервисы услуг, др. приложения)&lt;/td&gt;&lt;td&gt;Принимают VK Pay в качестве способа оплаты. Заинтересованы в безопасности платежей, простоте интеграции, снижении транзакционных издержек, увеличении конверсии платежей&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Платежные системы (например, Visa, Mastercard, МИР)&lt;/td&gt;&lt;td&gt;Обеспечение инфраструктуры для проведения платежей, установление стандартов безопасности. Заинтересованы в безопасном проведении платежей,&amp;nbsp;соблюдении стандартов безопасности, расширении сферы использования платежных карт&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;border-collapse: collapse;&quot; border=&quot;1&quot;&gt;Регуляторы (Центральный банк РФ, Роскомнадзор и т.п.)&lt;/td&gt;&lt;td&gt;Контроль за соблюдением законодательства в сфере финансовых услуг и защиты персональных данных. Защита прав потребителей, обеспечение стабильности финансовой системы, предотвращение мошенничества, соблюдение требований по защите персональных данных.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Разработчики сторонних приложений, интегрированных с VK Pay&lt;/td&gt;&lt;td&gt;Создание и поддержка приложений, использующих VK Pay для оплаты&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;&lt;u&gt;Источники информации&lt;/u&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1) Внутренние документы:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Описание текущей системы аутентификации и авторизации.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Схемы взаимодействия с другими сервисами VK.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Руководства для пользователей.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Требования к безопасности VK&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Внутренние стандарты безопасности VK.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Бизнес-требования VK Pay&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Цели и задачи VK Pay&lt;/div&gt;&lt;div&gt;Планы по развитию сервиса.&lt;/div&gt;&lt;div&gt;Архитектурные схемы и технические спецификации VK Pay.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2) Интервью с пользователями/экспертами:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Пользователи VK Pay:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Опросы о предпочтительных методах аутентификации (если такие были)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Анализ отзывов пользователей в службе поддержки и социальных сетях.&lt;/div&gt;&lt;div&gt;Сотрудники службы поддержки VK Pay:&lt;/div&gt;&lt;div&gt;Сбор информации о наиболее частых проблемах пользователей.&lt;/div&gt;&lt;div&gt;Выявление узких мест в текущей системе аутентификации.&lt;/div&gt;&lt;div&gt;Разработчики VK Pay:&lt;/div&gt;&lt;div&gt;Определение технических ограничений и возможностей.&lt;/div&gt;&lt;div&gt;Обсуждение архитектурных решений.&lt;/div&gt;&lt;div&gt;Эксперты по безопасности:&lt;/div&gt;&lt;div&gt;Оценка рисков и уязвимостей.&lt;/div&gt;&lt;div&gt;Рекомендации по усилению защиты.&lt;/div&gt;&lt;div&gt;Дизайнеры:&lt;/div&gt;&lt;div&gt;Оценка удобства и понятности интерфейса аутентификации.&lt;/div&gt;&lt;div&gt;Разработка рекомендаций по улучшению пользовательского опыта.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3) Внешние источники:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Анализ лучших практик других платежных систем (например, Google Pay и т.п.).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Изучение их систем аутентификации и авторизации.&lt;/div&gt;&lt;div&gt;Выявление успешных решений и возможных улучшений.&lt;/div&gt;&lt;div&gt;Исследование опыта других сервисов, требующих высокой безопасности (банки, государственные порталы):&lt;/div&gt;&lt;div&gt;Анализ методов двухфакторной аутентификации.&lt;/div&gt;&lt;div&gt;Изучение подходов к защите от мошенничества.&lt;/div&gt;&lt;div&gt;Обзоры рынка решений для аутентификации и авторизации.&lt;/div&gt;&lt;div&gt;Оценка доступных технологий и платформ.&lt;/div&gt;&lt;div&gt;Статьи и публикации в области безопасности и платежных систем.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4)Нормативно-правовая база:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Федеральный закон от 27.06.2011 N 161-ФЗ &quot;О национальной платежной системе&quot;: у&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;станавливает общие требования к функционированию платежных систем в РФ.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Федеральный закон от 27.07.2006 N 152-ФЗ &quot;О персональных данных&quot;: р&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;егулирует обработку персональных данных, включая требования к безопасности и конфиденциальности.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Положение Банка России от 09.06.2021 N 762-П &quot;О правилах осуществления перевода денежных средств&quot;: у&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;станавливает порядок осуществления переводов денежных средств в РФ.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ГОСТ Р 57580.1-2017 &quot;Безопасность финансовых (банковских) операций. Защита информации финансовых организаций. Основные положения&quot;: с&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;одержит рекомендации по обеспечению безопасности финансовых операций.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;ГОСТ Р 57580.2-2018 &quot;Безопасность финансовых (банковских) операций. Защита информации финансовых организаций. Методика оценки соответствия&quot;: о&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;писывает методику оценки соответствия требованиям безопасности финансовых организаций.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Стандарты безопасности платежных карт и другие приказы&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;, касающиеся защиты информации&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Рекомендации Банка России по вопросам информационной безопасности в финансовой сфере.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;align=left;verticalAlign=top;spacingTop=0;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="710" y="80" width="770" height="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-3" value="Пользователь" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="390" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-5" value="&lt;b&gt;Система VK Pay&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="110" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-43" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VWkP6nOwiM-HzqAWCi4c-6" target="VWkP6nOwiM-HzqAWCi4c-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-6" value="Авторизоваться через VK ID" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="175" y="140" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-16" value="include" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VWkP6nOwiM-HzqAWCi4c-7" target="VWkP6nOwiM-HzqAWCi4c-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-7" value="Авторизоваться по номеру телефона" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="290" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VWkP6nOwiM-HzqAWCi4c-8" target="VWkP6nOwiM-HzqAWCi4c-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-8" value="Использовать биометрию для входа" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="600" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-20" value="include" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VWkP6nOwiM-HzqAWCi4c-10" target="VWkP6nOwiM-HzqAWCi4c-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-10" value="Произвести платеж" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="430" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-11" value="Включить/выключить двухфакторную аутентификацию" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="286" y="360" width="127.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-12" value="Посмотреть баланс" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="510" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-18" value="include" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="VWkP6nOwiM-HzqAWCi4c-11" target="VWkP6nOwiM-HzqAWCi4c-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="498.97" y="293.20000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="VWkP6nOwiM-HzqAWCi4c-19" target="VWkP6nOwiM-HzqAWCi4c-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-19" value="Подтвердить платеж" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="452.5" y="430" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="VWkP6nOwiM-HzqAWCi4c-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="390" as="sourcePoint" />
+            <mxPoint x="188.76999999999998" y="200.00000000000003" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VWkP6nOwiM-HzqAWCi4c-24" target="VWkP6nOwiM-HzqAWCi4c-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-24" value="Восстановить пароль" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="175" y="210" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-26" value="Подтвердить личность" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="600" width="125" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-28" value="Система отправки СМС-кода для подтверждения" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="460" y="300" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="VWkP6nOwiM-HzqAWCi4c-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="400" as="sourcePoint" />
+            <mxPoint x="220" y="282.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.04;entryY=0.707;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="VWkP6nOwiM-HzqAWCi4c-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="70" y="380" as="sourcePoint" />
+            <mxPoint x="210" y="192.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="VWkP6nOwiM-HzqAWCi4c-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="380" as="sourcePoint" />
+            <mxPoint x="222.5" y="262.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-35" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.037;entryY=0.337;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="VWkP6nOwiM-HzqAWCi4c-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="430" as="sourcePoint" />
+            <mxPoint x="225" y="472.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-36" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.055;entryY=0.343;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="VWkP6nOwiM-HzqAWCi4c-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="420" as="sourcePoint" />
+            <mxPoint x="230" y="462.6" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-37" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.049;entryY=0.371;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="VWkP6nOwiM-HzqAWCi4c-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="410" as="sourcePoint" />
+            <mxPoint x="230" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VWkP6nOwiM-HzqAWCi4c-42" value="Система VK ID" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="450" y="145" width="110" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
