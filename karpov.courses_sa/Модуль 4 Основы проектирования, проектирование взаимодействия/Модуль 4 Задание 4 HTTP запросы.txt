@@ -4,7 +4,7 @@ POST /auth/register/start
 Content-Type: application/json
 
 {
- "phone":"+79055953362"
+ "phone":"+79681111223"
 }
 
 
@@ -14,7 +14,7 @@ POST /auth/register/verify
 Content-Type: application/json
 
 {
-  "phone": "+79055953362",
+  "phone": "+79681111223",
   "code": "1234"
 }
 
@@ -25,7 +25,7 @@ POST /auth/login
 Content-Type: application/json
 
 {
- "phone":"+79055953362",
+ "phone":"+79681111223",
  "password":"Password"
 }
 
@@ -34,4 +34,5 @@ Content-Type: application/json
 
 GET /auth/profile
 Content-Type: application/json
+
 Authorization: Bearer <access_token>
