@@ -5,7 +5,7 @@ POST /auth/register/start
 Content-Type: application/json
 
 {
- "phone":"+79055953362"
+ "phone":"+7901234567"
 }
 
 
@@ -15,7 +15,7 @@ POST /auth/register/verify
 Content-Type: application/json
 
 {
-  "phone": "+79055953362",
+  "phone": "+7901234567",
   "code": "1234"
 }
 
@@ -26,7 +26,7 @@ POST /auth/login
 Content-Type: application/json
 
 {
- "phone":"+79055953362",
+ "phone":"+7901234567",
  "password":"Password"
 }
 
