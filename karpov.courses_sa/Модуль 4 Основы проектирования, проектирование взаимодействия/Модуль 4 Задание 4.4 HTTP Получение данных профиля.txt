@@ -1,0 +1,5 @@
+### Описание:Запрос на получение данных текущего профиля. Требуется авторизвция
+
+GET /auth/profile
+Content-Type: application/json
+Authorization: Bearer <access_token>

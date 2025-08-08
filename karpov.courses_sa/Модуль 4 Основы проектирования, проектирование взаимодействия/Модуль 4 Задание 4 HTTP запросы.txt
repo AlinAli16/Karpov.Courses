@@ -1,0 +1,37 @@
+### Описание: Запрос на старт регистрации по номеру телефона
+
+POST /auth/register/start
+Content-Type: application/json
+
+{
+ "phone":"+79055953362"
+}
+
+
+### Описание: Запрос на подтверждение кода, отправленного на номер телефона, и завершение регистрации
+
+POST /auth/register/verify
+Content-Type: application/json
+
+{
+  "phone": "+79055953362",
+  "code": "1234"
+}
+
+
+### Описание: Запрос на вход в систему с использованием номера телефона и пароля
+
+POST /auth/login
+Content-Type: application/json
+
+{
+ "phone":"+79055953362",
+ "password":"Password"
+}
+
+
+### Описание:Запрос на получение данных текущего профиля. Требуется авторизвция
+
+GET /auth/profile
+Content-Type: application/json
+Authorization: Bearer <access_token>

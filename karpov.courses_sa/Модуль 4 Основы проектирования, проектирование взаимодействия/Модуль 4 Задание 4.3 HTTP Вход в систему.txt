@@ -1,0 +1,9 @@
+### Описание: Запрос на вход в систему с использованием номера телефона и пароля
+
+POST /auth/login
+Content-Type: application/json
+
+{
+ "phone":"+79055953362",
+ "password":"Password"
+}

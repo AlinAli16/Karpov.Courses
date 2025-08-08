@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.6">
+  <diagram name="Страница — 1" id="TWcB44s78CQBrmQz5vMS">
+    <mxGraphModel dx="1281" dy="535" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="U72yoBRRVa8thKnsgzk2-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Пищеварительная система&lt;/font&gt;&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="283" y="33" width="427" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-2" value="&lt;b&gt;&lt;u&gt;Цель:&lt;/u&gt;&lt;/b&gt; механическая и химическая обработка пищи" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="69" width="427" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-3" value="&lt;b&gt;&lt;u&gt;Основные свойства системы&lt;/u&gt;&lt;/b&gt;:&lt;div&gt;- прием и измельчение пищи (механическая обработка);&amp;nbsp;&lt;/div&gt;&lt;div&gt;- химическая обработка пищи и выделение питательных веществ;&lt;/div&gt;&lt;div&gt;- передача питательных веществ в кровь;&lt;/div&gt;&lt;div&gt;- выведение непереваренных веществ.&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="98" width="427" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-5" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+          <mxGeometry x="9" y="189" width="819" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-6" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=12 12;" parent="1" vertex="1">
+          <mxGeometry x="7" y="395" width="821" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="U72yoBRRVa8thKnsgzk2-7" target="U72yoBRRVa8thKnsgzk2-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-7" value="&lt;b&gt;Ротовая полость&lt;/b&gt; (рот, язык, зубы)&lt;div&gt;- прием пищи и измельчение пищи&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="25" y="230" width="118" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="U72yoBRRVa8thKnsgzk2-8" target="U72yoBRRVa8thKnsgzk2-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-8" value="&lt;b&gt;Глотка&amp;nbsp;&lt;/b&gt;&lt;div&gt;-передача измельченной пищи в пищевод&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="164" y="230" width="98" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="U72yoBRRVa8thKnsgzk2-9" target="U72yoBRRVa8thKnsgzk2-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-9" value="&lt;b&gt;Пищевод&lt;/b&gt;&lt;div&gt;- соединяет глотку и желудок;&lt;/div&gt;&lt;div&gt;- не допускает попадания агрессивного содержимого желудка в верхние части тракта&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="287" y="231" width="188" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="U72yoBRRVa8thKnsgzk2-10" target="U72yoBRRVa8thKnsgzk2-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-10" value="&lt;b&gt;Желудок&lt;/b&gt;&lt;div&gt;- накапливает и переваривает пищу&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="496" y="231" width="112" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="U72yoBRRVa8thKnsgzk2-11" target="U72yoBRRVa8thKnsgzk2-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-11" value="&lt;b&gt;Тонкая кишка&lt;/b&gt;&lt;div style=&quot;&quot;&gt;- основное переваривание и всасывание пит. веществ&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="634" y="229.5" width="90" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-12" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Пищеварительный канал&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="313.5" y="198" width="213.5" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-24" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Пищеварительные железы&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="296" y="539" width="213.5" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-25" value="&lt;b&gt;Слюнные железы&lt;/b&gt;&lt;div&gt;- находятся в ротовой полости&amp;nbsp;&lt;/div&gt;&lt;div&gt;- вырабытывают слюну&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="25" y="418" width="118" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-28" value="&lt;b&gt;Поджелудочные железы&lt;/b&gt;&lt;div&gt;-&amp;nbsp;выделяет в кишку пищеварительный сок&lt;/div&gt;&lt;div&gt;- выработка ферментов и гормонов&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="341" y="419" width="222" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-29" value="&lt;b&gt;Печень&lt;/b&gt;&lt;div&gt;- вырабатывает и накапливает и&amp;nbsp; регулирует желчь необходимую для пищеварения&lt;/div&gt;&lt;div&gt;- связан с протоком желчного пузыря и поджелудочной железы&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="599" y="419" width="195" height="99" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-30" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="U72yoBRRVa8thKnsgzk2-25" target="U72yoBRRVa8thKnsgzk2-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="123" y="414" as="sourcePoint" />
+            <mxPoint x="173" y="364" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-33" value="&lt;b&gt;Толстая кишка&lt;/b&gt;&lt;div&gt;- конечная точка тракта&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="748" y="228.25" width="69" height="90.5" as="geometry" />
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-35" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="U72yoBRRVa8thKnsgzk2-28" target="U72yoBRRVa8thKnsgzk2-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="614" y="368.75" as="sourcePoint" />
+            <mxPoint x="664" y="318.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-36" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="U72yoBRRVa8thKnsgzk2-29" target="U72yoBRRVa8thKnsgzk2-11" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="702" y="405" as="sourcePoint" />
+            <mxPoint x="752" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U72yoBRRVa8thKnsgzk2-37" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="U72yoBRRVa8thKnsgzk2-28" target="U72yoBRRVa8thKnsgzk2-29" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="398" y="344" as="sourcePoint" />
+            <mxPoint x="448" y="294" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
