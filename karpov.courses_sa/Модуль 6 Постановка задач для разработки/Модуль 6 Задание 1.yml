@@ -1,0 +1,234 @@
+openapi: 3.0.3
+info:
+  title: Auth API
+  version: 1.0.0
+  description: API аутентификации и авторизации
+
+paths:
+  /auth/register/start:
+    post:
+      summary: Начало регистрации по телефону
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                phone:
+                  type: string
+                  example: "+79001234567"
+                  description: Номер телефона пользователя
+      responses:
+        '200':
+          description: Код отправлен
+        '400':
+          description: Неверный формат номера телефона
+        '500':
+          description: Ошибка сервера
+
+  /auth/register/verify:
+    post:
+      summary: Подтверждение SMS-кода
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                phone:
+                  type: string
+                  example: "+79001234567"
+                  description: Номер телефона, на который был отправлен код
+                code:
+                  type: string
+                  example: "123456"
+                  description: SMS-код
+      responses:
+        '200':
+          description: Пользователь создан, токены выданы
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                    description: JWT access token
+                  refresh_token:
+                    type: string
+                    description: JWT refresh token
+        '400':
+          description: Неверный код подтверждения или неверный номер телефона
+        '404':
+          description: Номер телефона не найден
+        '500':
+          description: Ошибка сервера
+
+  /auth/login:
+    post:
+      summary: Вход в систему
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                phone:
+                  type: string
+                  example: "+79001234567"
+                  description: Номер телефона пользователя
+                password:
+                  type: string
+                  example: "securePassword"
+                  description: Пароль пользователя
+      responses:
+        '200':
+          description: Успешная аутентификация, токены выданы
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                    description: JWT access token
+                  refresh_token:
+                    type: string
+                    description: JWT refresh token
+        '401':
+          description: Неверный номер телефона или пароль
+        '500':
+          description: Ошибка сервера
+
+  /auth/logout:
+    post:
+      summary: Выход из системы
+      security:
+        - bearerAuth: []
+      responses:
+        '204':
+          description: Успешный выход
+        '401':
+          description: Не авторизован
+        '500':
+          description: Ошибка сервера
+
+  /auth/token/refresh:
+    post:
+      summary: Обновление токена
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                refresh_token:
+                  type: string
+                  description: JWT refresh token
+      responses:
+        '200':
+          description: Новый access token выдан
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                    description: JWT access token
+        '400':
+          description: Неверный refresh token
+        '401':
+          description: Refresh token истек
+        '500':
+          description: Ошибка сервера
+
+  /auth/sessions:
+    get:
+      summary: Получение активных сессий пользователя
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Список активных сессий
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    session_id:
+                      type: string
+                      description: Уникальный идентификатор сессии
+                    login_time:
+                      type: string
+                      format: date-time
+                      description: Время входа
+        '401':
+          description: Не авторизован
+        '500':
+          description: Ошибка сервера
+
+  /auth/sessions/{session_id}:
+    delete:
+      summary: Завершение конкретной сессии
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: session_id
+          schema:
+            type: string
+          required: true
+          description: Идентификатор сессии для завершения
+      responses:
+        '204':
+          description: Сессия успешно завершена
+        '401':
+          description: Не авторизован
+        '404':
+          description: Сессия не найдена
+        '500':
+          description: Ошибка сервера
+
+  /auth/profile:
+    get:
+      summary: Получение профиля пользователя
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Информация о профиле пользователя
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  phone:
+                    type: string
+                    description: Номер телефона пользователя
+                  email:
+                    type: string
+                    description: Email пользователя
+                  first_name:
+                    type: string
+                    description: Имя пользователя
+                  last_name:
+                    type: string
+                    description: Фамилия пользователя
+        '401':
+          description: Не авторизован
+        '500':
+          description: Ошибка сервера
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
